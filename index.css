@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(to right,skyblue,rgb(133, 133, 234));
+}
+h1{
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+form{
+    margin: 20px auto;
+    padding: 18px 10px; 
+    width: fit-content;
+    background-color: white;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0,0,0.5);
+    border-radius: 20px;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+}
+form > div:not(:last-child){
+    margin-bottom: 20px;
+}
+.radio,.checkbox{
+    display:flex;
+    flex-direction: column;
+    margin-left: 5px;
+}
+.radio > span{
+    margin-bottom: 5px;
+}
+.checkbox >span{
+    margin-bottom: 5px;
+}
+input{
+    display: inline-block;
+}
+input[type=text],input[type=password]{
+    width: 180px;
+    height: 30px;
+    border-radius: 5px;
+}
+.checkbox span,.radio span{
+    font-size: 20px;
+}
+.radio{
+    display: flex;
+}
+label{
+    font-size: 20px;
+}
+button{
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    background-color: #0A66C2;
+    color: white;
+    font-size: 15px;
+    border-radius: 5px;
+    margin-left: 30%;
+    cursor: pointer;
+}
+table{
+    width:fit-content;
+    margin: 20px auto;
+}
+tr{
+    margin-bottom: 5px;
+}
+table td{
+    width: fit-content;
+    min-width:100px;
+    border: 0.5px solid white;
+    margin-bottom: 0px;
+    text-align: center;
+    padding: 5px;
+    font-size: 20px;
+    color: white;
+}
+td > img{
+    width: 100px;
+    height: 100px;
+
+}
+@media(max-width:400px){
+    tr{
+        display: flex;
+        flex-direction: column;
+    }
+    tr td{
+        width: fit-content;
+        min-width: 120px !important;
+    }
+    
+}

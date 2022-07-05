@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form>
+        <div>
+        <label for="">Name:</label>
+        <input type="text" id="name">
+       </div>
+        
+        <div>
+        <label for="">Email:</label>
+        <input type="text" id="email">
+        </div>
+        
+        <div>
+        <label for="">Password:</label>
+        <input type="password" id="password">
+        </div>
+        
+        <div>
+        <label for="">Image link:</label>
+        <input type="text" id="image">
+        </div>
+        
+        <div style="display: flex;">
+        <label for="">Gender:</label>
+        <div class="radio">
+        <span><input type="radio" name="gender" value="Male" class="gender">Male</span>
+        <span><input type="radio" name="gender" value="Female" class="gender">Female</span>
+        </div>
+        </div>
+
+        <div style="display:flex">
+        <label for="">Skills:</label>
+        <div class="checkbox">
+            <span><input type="checkbox" name="skill" value="Java" class="skill">Java</span>
+                <span><input type="checkbox" name="skill" value="Python" class="skill">Python</span>
+                    <span><input type="checkbox" name="skill" value="C++" class="skill">C++  </span>
+        </div>
+        </div>
+        <button type="button" id="btn" onclick="register()">Submit</button>
+    </form>
+    <table id="users"></table>
+    <script src="./index.js"></script>
+
+</body>
+</html>
